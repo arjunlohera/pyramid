@@ -1,12 +1,5 @@
 </body>
  <!-- START: FOOTER -->
- <!-- <div class="container">
-    <div class="row text-center align-items-center" style="min-height: 5em">
-      <div class="col-12">
-        <p class="text-muted">This Website is design and develop with <i class="fas fa-heart"></i></p>
-      </div>
-    </div>
-  </div> -->
   <footer class="footer">
       <div class="container" id="contact">
         <div class="row">

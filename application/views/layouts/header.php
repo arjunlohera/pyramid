@@ -27,24 +27,12 @@
             <div class="collapse navbar-collapse" id="myMenu">
 
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="<?=base_url()?>" class="nav-link">Home</a></li>
-
-
-                    <!-- <li class="nav-item dropdown">
-                        <a href="#" class="nav-link  dropdown-toggle" data-toggle="dropdown" id="navbarDropdown"
-                            role="button">Service</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a href="web.html" class="dropdown-item">Web Development</a>
-
-                            <a href="#" class="dropdown-item">Other service</a>
-                            <a href="#" class="dropdown-item">company</a>
-                        </div>
-                    </li> -->
-
-                    <li class="nav-item"><a href="<?=base_url()?>main/blog" class="nav-link">Blog</a></li>
-
-                    <li class="nav-item"><a href="<?=base_url()?>main/contact" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="<?=base_url()?>main/about" class="nav-link">About Us</a></li>
+                    <li class="nav-item <?php if($this->uri->segment(2) == ''){ echo "active";}?>"><a href="<?=base_url()?>" class="nav-link">Home</a></li>
+                    <li class="nav-item <?php if($this->uri->segment(2) == 'blog'){ echo "active";}?>"><a href="<?=base_url()?>main/blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item <?php if($this->uri->segment(2) == 'contact'){ echo "active";}?>"><a href="<?=base_url()?>main/contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item <?php if($this->uri->segment(2) == 'about'){ echo "active";}?>"><a href="<?=base_url()?>main/about" class="nav-link">About Us</a></li>
                 </ul>
             </div>
         </nav>
+
+        
