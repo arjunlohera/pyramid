@@ -17,7 +17,7 @@
 
 <body class="">
         <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-A_primary">
-            <a href="#" class="navbar-brand">
+            <a href="<?=base_url();?>" class="navbar-brand">
                 <img src="<?= base_url()?>\assets\img\logo\logo.png" height="50" class="px-2"
                     alt="Pyramid Infotech"> Pyramid Infotech
             </a>

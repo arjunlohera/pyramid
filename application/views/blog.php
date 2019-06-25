@@ -10,8 +10,8 @@
             </p>
         </div>
     </div>
-    <div class="row mb-3">
-        <div class="col-md-6">
+    <div class="row">
+        <div class="col-md-6 my-2">
             <div class="card card_bg_<?=rand(1,10)?> text-white shadow-sm text-center">
                 <div class="card-header">
                     Self Help
@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 my-2">
             <div class="card card_bg_<?=rand(1,10)?> text-white text-center">
                 <div class="card-header">
                     Featured
@@ -42,8 +42,8 @@
             </div>
         </div>
     </div>
-    <div class="row mb-3">
-        <div class="col-md-6">
+    <div class="row">
+        <div class="col-md-6 my-2">
             <div class="card card_bg_<?=rand(1,10)?> text-white shadow-sm text-center">
                 <div class="card-header">
                     Featured
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 my-2">
             <div class="card card_bg_<?=rand(1,10)?> text-white text-center">
                 <div class="card-header">
                     Featured

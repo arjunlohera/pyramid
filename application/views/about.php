@@ -76,7 +76,7 @@
                         </div>
                         <div class="collapse show" id="arjun" data-parent="#accordian">
                             <div class="card-body">
-                                <p class="d-none d-sm-block">
+                                <p class="">
                                     Computer Science Engineer and web developer.
                                 </p>
                             </div>
@@ -92,7 +92,7 @@
                         </div>
                         <div class="collapse" id="vanshi" data-parent="#accordian">
                             <div class="card-body">
-                                <p class="d-none d-sm-block">
+                                <p class="">
                                     Computer Science Enginner and Web developer.
                                 </p>
                             </div>

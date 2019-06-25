@@ -1,6 +1,6 @@
 </body>
  <!-- START: FOOTER -->
-  <footer class="footer">
+  <footer class="footer mt-3">
       <div class="container" id="contact">
         <div class="row">
           <div class="col-12 col-md-6">
