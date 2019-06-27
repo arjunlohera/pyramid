@@ -1,8 +1,10 @@
 <?php
+
 class Main extends CI_Controller {
     public function __construct(){
         parent::__construct();
         $this->load->library('layout');
+        $this->load->helper(array('form'));
     }
 
     /**Load Home page */
@@ -31,6 +33,15 @@ class Main extends CI_Controller {
         $this->layout->header('ABOUT', true, true);
         $this->load->view('about');
         $this->layout->footer('ABOUT');
+    }
+
+    /**Load Tools Page */
+    public function tools(){
+        $this->load->library('session');
+        $this->session->set_userdata('folder_name', uniqid("DIR_"));
+        $this->layout->header('TOOLS', true, true);
+        $this->load->view('tools/pdf_merge');
+        $this->layout->footer('TOOLS');
     }
 }
 ?>

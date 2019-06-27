@@ -29,6 +29,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item <?php if($this->uri->segment(2) == ''){ echo "active";}?>"><a href="<?=base_url()?>" class="nav-link">Home</a></li>
                     <li class="nav-item <?php if($this->uri->segment(2) == 'blog'){ echo "active";}?>"><a href="<?=base_url()?>main/blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item <?php if($this->uri->segment(2) == 'tools'){ echo "active";}?>"><a href="<?=base_url()?>main/tools" class="nav-link">Tools</a></li>
                     <li class="nav-item <?php if($this->uri->segment(2) == 'contact'){ echo "active";}?>"><a href="<?=base_url()?>main/contact" class="nav-link">Contact</a></li>
                     <li class="nav-item <?php if($this->uri->segment(2) == 'about'){ echo "active";}?>"><a href="<?=base_url()?>main/about" class="nav-link">About Us</a></li>
                 </ul>
