@@ -35,8 +35,8 @@ class Main extends CI_Controller {
         $this->layout->footer('ABOUT');
     }
 
-    /**Load Tools Page */
-    public function tools(){
+    /**Load PDF merger tool Page */
+    public function pdf_merger_tool(){
         $this->load->library('session');
         $this->session->set_userdata('folder_name', uniqid("DIR_"));
         $this->layout->header('TOOLS', true, true);

@@ -93,7 +93,7 @@
                         <div class="collapse" id="vanshi" data-parent="#accordian">
                             <div class="card-body">
                                 <p class="">
-                                    Computer Science Enginner and Web developer.
+                                    Computer Science Engineer and Web developer.
                                 </p>
                             </div>
                         </div>

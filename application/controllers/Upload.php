@@ -42,16 +42,25 @@ class Upload extends CI_Controller
      * @rjun
      */
     public function merge_pdfs(){
-        $folder_name = $this->session->userdata('folder_name');
-        $path = "./uploads/$folder_name";
-        $files = scandir($path);
-        $pdf = new LynX39\LaraPdfMerger\PdfManage;
-        foreach($files as $file) {
-            if($file == "." || $file == "..") {
-                continue;
-            }
-            $pdf->addPDF($path."\\".$file, 'all');
+        if($this->session->has_userdata('folder_name')) {
+            $folder_name = $this->session->userdata('folder_name');
+            $path = "./uploads/$folder_name";
+            if(file_exists($path)) {
+                $files = scandir($path);
+                $pdf = new LynX39\LaraPdfMerger\PdfManage;
+                foreach($files as $file) {
+                    if($file == "." || $file == "..") {
+                        continue;
+                    }
+                    $pdf->addPDF($path."/".$file, 'all');
+                }
+                if($pdf->merge('download','PYRAMID_INFOTECH_MERGED_FILE.pdf')){
+                    $this->session->unset_userdata('folder_name');
+                    // $this->session->sess_destroy();
+                }
+            } else {
+                redirect('main/pdf_merger_tool');
+            } 
         }
-        echo ($pdf->merge('download','PYRAMID_INFOTECH_MERGED_FILE.pdf')) ? true:false;
     }
 }

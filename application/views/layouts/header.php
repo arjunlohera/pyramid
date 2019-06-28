@@ -26,12 +26,22 @@
             </button>
             <div class="collapse navbar-collapse" id="myMenu">
 
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item <?php if($this->uri->segment(2) == ''){ echo "active";}?>"><a href="<?=base_url()?>" class="nav-link">Home</a></li>
-                    <li class="nav-item <?php if($this->uri->segment(2) == 'blog'){ echo "active";}?>"><a href="<?=base_url()?>main/blog" class="nav-link">Blog</a></li>
-                    <li class="nav-item <?php if($this->uri->segment(2) == 'tools'){ echo "active";}?>"><a href="<?=base_url()?>main/tools" class="nav-link">Tools</a></li>
-                    <li class="nav-item <?php if($this->uri->segment(2) == 'contact'){ echo "active";}?>"><a href="<?=base_url()?>main/contact" class="nav-link">Contact</a></li>
-                    <li class="nav-item <?php if($this->uri->segment(2) == 'about'){ echo "active";}?>"><a href="<?=base_url()?>main/about" class="nav-link">About Us</a></li>
+            <ul class="navbar-nav ml-auto">
+                    <li class="nav-item <?php if($this->uri->segment(2) == ''){ echo "active";}?>"><a href="<?=base_url()?>" class="nav-link"><i class="fa fa-home"></i> Home</a></li>
+                    <li class="nav-item <?php if($this->uri->segment(2) == 'blog'){ echo "active";}?>"><a href="<?=base_url()?>index.php/main/blog" class="nav-link"><i class="fa fa-blog"></i> Blog</a></li>
+                    <li class="nav-item <?php if($this->uri->segment(2) == 'pdf_merger_tool'){ echo "active";}?> dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-tools"></i> Tools
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="<?=base_url()?>index.php/main/pdf_merger_tool"><i class="fas fa-file-pdf"></i> Pdf Merger</a>
+                            <a class="dropdown-item" href="#"></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"></a>
+                        </div>
+                    </li>
+                    <li class="nav-item <?php if($this->uri->segment(2) == 'contact'){ echo "active";}?>"><a href="<?=base_url()?>index.php/main/contact" class="nav-link"><i class="fa fa-phone"></i> Contact</a></li>
+                    <li class="nav-item <?php if($this->uri->segment(2) == 'about'){ echo "active";}?>"><a href="<?=base_url()?>index.php/main/about" class="nav-link"><i class="fa fa-info"></i> About Us</a></li>
                 </ul>
             </div>
         </nav>
