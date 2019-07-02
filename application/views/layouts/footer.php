@@ -42,6 +42,6 @@
     </footer>
   <!-- END: FOOTER -->
 <?php foreach ($js as $j) {?>
-    <script src="<?=$j?>"></script>
+    <script type="text/javascript" src="<?=$j?>"></script>
 <?php }?>
 </html>

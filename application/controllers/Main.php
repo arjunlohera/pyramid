@@ -3,7 +3,6 @@
 class Main extends CI_Controller {
     public function __construct(){
         parent::__construct();
-        $this->load->library('layout');
         $this->load->helper(array('form'));
     }
 
@@ -37,7 +36,6 @@ class Main extends CI_Controller {
 
     /**Load PDF merger tool Page */
     public function pdf_merger_tool(){
-        $this->load->library('session');
         $this->session->set_userdata('folder_name', uniqid("DIR_"));
         $this->layout->header('TOOLS', true, true);
         $this->load->view('tools/pdf_merge');
