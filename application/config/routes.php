@@ -50,6 +50,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 // $route['pyramid/index.php'] = 'main';
-$route['default_controller'] = 'Main';
+$route['default_controller'] = 'Info';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

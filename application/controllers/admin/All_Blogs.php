@@ -13,7 +13,6 @@ class All_Blogs extends CI_Controller {
             $this->load->view('admin/all_blogs', $data);
             $this->layout->footer('ADMIN-ALL-BLOG');
         } else {
-            echo "You do not have permission";
             redirect('Auth');
         }
     } 
